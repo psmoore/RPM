@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.IO.Compression.FileSystem; $docxPath = ''c:\\\\Users\\\\psmoo\\\\OneDrive\\\\Documents\\\\GitHub\\\\RPM\\\\Rob McCarthy Resume Summer 25.docx''; $zip = [System.IO.Compression.ZipFile]::OpenRead\\($docxPath\\); $entry = $zip.Entries | Where-Object { $_FullName -eq ''word/document.xml'' }; $stream = $entry.Open\\(\\); $reader = New-Object System.IO.StreamReader\\($stream\\); $xml = [xml]$reader.ReadToEnd\\(\\); $reader.Close\\(\\); $zip.Dispose\\(\\); $xml.SelectNodes\\(''//w:t'', \\(New-Object System.Xml.XmlNamespaceManager\\($xml.NameTable\\)\\).AddNamespace\\(''w'',''http://schemas.openxmlformats.org/wordprocessingml/2006/main''\\)\\) | ForEach-Object { $_InnerText }\")",
+      "Skill(frontend-design)",
+      "Skill(frontend-design:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo create:*)"
+    ]
+  }
+}
