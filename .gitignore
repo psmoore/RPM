@@ -1,0 +1,12 @@
+# Reference documents (not for public repo)
+*.docx
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*.swo
